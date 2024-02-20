@@ -1,0 +1,32 @@
+name: WorldShop
+version: '${project.version}'
+main: org.info_0.worldshop.WorldShop
+api-version: '1.20'
+author: info_0
+prefix: WShop
+depend:
+  - Vault
+commands:
+  wshop:
+    description: "Main command the WorldShop"
+    aliases:
+      - ws
+      - worldshop
+    usage: "/wshop help"
+    permission: "wshop.command"
+  wshopadmin:
+    description: "Admin command the WorldShop"
+    aliases:
+      - wsa
+      - wshopa
+      - worldshopadmin
+    usage: "/wshopadmin help"
+    permission: "wshop.admin"
+permissions:
+  wshopadmin.command:
+    description: "Use admin command the WorldShop"
+    default: op
+  wshop.command:
+    description: "Use main command the WorldShop"
+  wshop.events:
+    description: "Use events the WorldShop"
