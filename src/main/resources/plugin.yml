@@ -6,6 +6,7 @@ author: info_0
 prefix: WShop
 depend:
   - Vault
+folia-supported: true
 commands:
   wshop:
     description: "Main command the WorldShop"
